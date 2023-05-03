@@ -1,0 +1,46 @@
+.game{
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 165px;
+    border: 2px solid black;
+    font-size: 100px;
+    cursor: pointer;
+  }
+  
+  #info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row{
+    display: flex;
+  }
+
+  #restart{
+    font-size: larger;
+    width: 150px;
+    height: 60px;
+    
+  }
+  #name{
+    text-align: center;
+  }
