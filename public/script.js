@@ -18,7 +18,7 @@ const winningConditions = [
   [2, 4, 6],
 ];
 
-// Add event listeners to each cell
+
 cells[0].addEventListener("click", handleCellClick);
 cells[1].addEventListener("click", handleCellClick);
 cells[2].addEventListener("click", handleCellClick);
@@ -32,7 +32,7 @@ cells[8].addEventListener("click", handleCellClick);
 //   cells[i].addEventListener("click", handleCellClick);
 // }
 
-// Handle cell click
+
 function handleCellClick(e) {
   const cell = e.target;
   const cellIndex = cell.getAttribute("id");
@@ -49,7 +49,7 @@ function handleCellClick(e) {
   }
 }
 
-// Check if the game has ended
+
 function checkGameEnd() {
   for (let i = 0; i < winningConditions.length; i++) {
     const [a, b, c] = winningConditions[i];
@@ -66,7 +66,7 @@ function checkGameEnd() {
   }
 }
 
-// Restart the game
+
 function restartGame() {
   board = ["", "", "", "", "", "", "", "", ""];
   currentPlayer = "X";
@@ -79,5 +79,4 @@ function restartGame() {
   }
 }
 
-// Add event listener to the restart button
 restartBtn.addEventListener("click", restartGame);
